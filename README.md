@@ -18,9 +18,8 @@ Pace, R. Kelley and Ronald Barry, Sparse Spatial Autoregressions, Statistics and
 
 The manuscript describing the data can be found at www.spatial-statistics.com. The data are also available as Matlab files.
 
-Contact kelley@spatial-statistics.com or kelley@pace.am if you have any further questions. Thanks.
 
 
 Source: StatLib repository.
 Characteristics: 20460 cases, 8 attributes (0 nominal, 8 continuous).
-Download : cal_housing.tgz (441963 bytes)
+
