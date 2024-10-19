@@ -2,7 +2,7 @@
 
 
 
-I be using a dataset that comes with the `scikit-learn` package. 
+I will be using a dataset that comes with the `scikit-learn` package. 
 
 
 California Housing
