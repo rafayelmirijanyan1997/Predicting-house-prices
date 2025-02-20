@@ -1,25 +1,52 @@
-# Predicting-house-prices
+Overview
+This Jupyter Notebook (regression.ipynb) performs regression analysis on the California Housing Prices dataset. It includes data exploration, visualization, and regression models to predict median house values.
 
+Dataset
+The dataset contains 20,640 samples and 8 features:
 
+- MedInc: Median income in block group
+- HouseAge: Median house age in block group
+- AveRooms: Average number of rooms per household
+- AveBedrms: Average number of bedrooms per household
+- Population: Block group population
+- AveOccup: Average number of household members
+- Latitude: Block group latitude
+- Longitude: Block group longitude
+- MedHouseVal: Median house value (target variable)
 
-I will be using a dataset that comes with the `scikit-learn` package. 
+Notebook Structure
+1. **Importing Libraries**: pandas, matplotlib, seaborn, scikit-learn.
+2. **Loading Data**: Using fetch_california_housing from sklearn.datasets.
+3. **Data Exploration**: Checking missing values, correlation heatmap.
+4. **Data Preprocessing**: Standardization, splitting features and target.
+5. **Model Implementation**:
+   - Linear Regression (LinearRegression from sklearn.linear_model).
+   - Ridge Regression with cross-validation (RidgeCV from sklearn.linear_model).
+6. **Model Evaluation**: Cross-validation for performance assessment.
 
+Key Steps
+- **Exploration**: Checking data quality, correlation analysis.
+- **Preprocessing**: Standardizing data for equal feature contribution.
+- **Modeling**: Implementing Linear and Ridge Regression.
+- **Validation**: Using cross-validation for robust evaluation.
 
-California Housing
-This is a dataset obtained from the StatLib repository. Here is the included description:
+Dependencies
+Install required libraries using:
+```
+pip install pandas matplotlib seaborn scikit-learn numpy
+```
 
-S&P Letters Data
-We collected information on the variables using all the block groups in California from the 1990 Cens us. In this sample a block group on average includes 1425.5 individuals living in a geographically co mpact area. Naturally, the geographical area included varies inversely with the population density. W e computed distances among the centroids of each block group as measured in latitude and longitude. W e excluded all the block groups reporting zero entries for the independent and dependent variables. T he final data contained 20,640 observations on 9 variables. The dependent variable is ln(median house value).
+Usage
+1. Clone the repository.
+2. Open `regression.ipynb` in Jupyter.
+3. Run the cells sequentially to load, explore, preprocess, and model the data.
+4. Evaluate models using cross-validation.
 
+Results
+The notebook provides insights into feature relationships and evaluates regression models for predicting housing prices in California.
 
-The file contains all the the variables. Specifically, it contains median house value, med ian income, housing median age, total rooms, total bedrooms, population, households, latitude, and lo ngitude in that order.
-Reference
-Pace, R. Kelley and Ronald Barry, Sparse Spatial Autoregressions, Statistics and Probability Letters, 33 (1997) 291-297.
+License
+Licensed under MIT License.
 
-The manuscript describing the data can be found at www.spatial-statistics.com. The data are also available as Matlab files.
-
-
-
-Source: StatLib repository.
-Characteristics: 20460 cases, 8 attributes (0 nominal, 8 continuous).
-
+Acknowledgments
+Dataset provided by `sklearn.datasets`. Inspired by various ML tutorials.
